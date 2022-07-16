@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Amir A, AA, LIC=HF856-DBKRY-C2DL6-D96YD-QN60M-DQA9N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      UL2CM3.DLL V1.160.12.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\AmirHossein\Desktop\!i\pracs\Microprocessor\micro-p1\Keil-Project\first.uvprojx
+Project File Date:  02/21/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling stm32f4xx_hal_msp.c...
+.\RTE\Device\STM32F401RETx\STCubeGenerated\Inc\main.h(30): error:  #5: cannot open source input file "stm32f4xx_hal.h": No such file or directory
+  #include "stm32f4xx_hal.h"
+C:\Users\AmirHossein\Desktop\!i\pracs\Microprocessor\micro-p1\Keil-Project\RTE\Device\STM32F401RETx\STCubeGenerated\Src\stm32f4xx_hal_msp.c: 0 warnings, 1 error
+compiling main.c...
+.\RTE\Device\STM32F401RETx\STCubeGenerated\Inc\main.h(30): error:  #5: cannot open source input file "stm32f4xx_hal.h": No such file or directory
+  #include "stm32f4xx_hal.h"
+RTE\Device\STM32F401RETx\STCubeGenerated\Src\main.c: 0 warnings, 1 error
+compiling stm32f4xx_it.c...
+.\RTE\Device\STM32F401RETx\STCubeGenerated\Inc\main.h(30): error:  #5: cannot open source input file "stm32f4xx_hal.h": No such file or directory
+  #include "stm32f4xx_hal.h"
+RTE\Device\STM32F401RETx\STCubeGenerated\Src\stm32f4xx_it.c: 0 warnings, 1 error
+compiling system_stm32f4xx.c...
+".\Objects\first.axf" - 3 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil.FrameworkCubeMX.1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F401RETx
+  .\RTE\Device\STM32F401RETx\STCubeGenerated\Inc
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
+      Include file:  MX_Device.h
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s
+      Source file:   MDK\Device\Source\ARM\STM32F401xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

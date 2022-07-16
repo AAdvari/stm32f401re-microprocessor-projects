@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"micro-p9-receiver\startup_stm32f401xe.o"
+"micro-p9-receiver\main.o"
+"micro-p9-receiver\stm32f4xx_it.o"
+"micro-p9-receiver\stm32f4xx_hal_msp.o"
+"micro-p9-receiver\stm32f4xx_hal_spi.o"
+"micro-p9-receiver\stm32f4xx_hal_rcc.o"
+"micro-p9-receiver\stm32f4xx_hal_rcc_ex.o"
+"micro-p9-receiver\stm32f4xx_hal_flash.o"
+"micro-p9-receiver\stm32f4xx_hal_flash_ex.o"
+"micro-p9-receiver\stm32f4xx_hal_flash_ramfunc.o"
+"micro-p9-receiver\stm32f4xx_hal_gpio.o"
+"micro-p9-receiver\stm32f4xx_hal_dma_ex.o"
+"micro-p9-receiver\stm32f4xx_hal_dma.o"
+"micro-p9-receiver\stm32f4xx_hal_pwr.o"
+"micro-p9-receiver\stm32f4xx_hal_pwr_ex.o"
+"micro-p9-receiver\stm32f4xx_hal_cortex.o"
+"micro-p9-receiver\stm32f4xx_hal.o"
+"micro-p9-receiver\stm32f4xx_hal_exti.o"
+"micro-p9-receiver\stm32f4xx_hal_tim.o"
+"micro-p9-receiver\stm32f4xx_hal_tim_ex.o"
+"micro-p9-receiver\stm32f4xx_hal_uart.o"
+"micro-p9-receiver\system_stm32f4xx.o"
+--strict --scatter "micro-p9-receiver\micro-p9-receiver.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "micro-p9-receiver.map" -o micro-p9-receiver\micro-p9-receiver.axf

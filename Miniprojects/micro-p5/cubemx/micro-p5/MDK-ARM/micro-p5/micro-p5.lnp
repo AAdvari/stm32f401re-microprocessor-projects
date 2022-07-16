@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"micro-p5\startup_stm32f401xe.o"
+"micro-p5\main.o"
+"micro-p5\stm32f4xx_it.o"
+"micro-p5\stm32f4xx_hal_msp.o"
+"micro-p5\stm32f4xx_hal_tim.o"
+"micro-p5\stm32f4xx_hal_tim_ex.o"
+"micro-p5\stm32f4xx_hal_rcc.o"
+"micro-p5\stm32f4xx_hal_rcc_ex.o"
+"micro-p5\stm32f4xx_hal_flash.o"
+"micro-p5\stm32f4xx_hal_flash_ex.o"
+"micro-p5\stm32f4xx_hal_flash_ramfunc.o"
+"micro-p5\stm32f4xx_hal_gpio.o"
+"micro-p5\stm32f4xx_hal_dma_ex.o"
+"micro-p5\stm32f4xx_hal_dma.o"
+"micro-p5\stm32f4xx_hal_pwr.o"
+"micro-p5\stm32f4xx_hal_pwr_ex.o"
+"micro-p5\stm32f4xx_hal_cortex.o"
+"micro-p5\stm32f4xx_hal.o"
+"micro-p5\stm32f4xx_hal_exti.o"
+"micro-p5\system_stm32f4xx.o"
+--strict --scatter "micro-p5\micro-p5.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "micro-p5.map" -o micro-p5\micro-p5.axf
